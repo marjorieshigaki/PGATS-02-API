@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main, habilitando-pipeline ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main, habilitando-pipeline ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -22,5 +22,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
+    - name: Run software tests
       run: npm test
